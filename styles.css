@@ -1,0 +1,76 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(3, 64, 101);
+}
+h3 {
+  text-align: center;
+  margin: 5px 5px;
+  color: white;
+}
+.gameWrapper {
+  border: solid 1px white;
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.5);
+  width: 296px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.grid {
+  width: 296px;
+  height: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.grid div {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: white 1px solid;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.playerOne {
+  background-color: red;
+  border-radius: 10px;
+}
+
+.playerTwo {
+  background-color: yellow;
+  border-radius: 10px;
+}
+.bottomCoverDiv{
+  position: absolute;
+   width: 296px;
+   height: 48px;
+   background-color:  rgb(3, 64, 101);;
+   border-right: white 1px solid;
+   display: flex;
+   z-index: 160;
+}
+.startBtn{
+  width: 120px;
+  height: 25px;
+  margin: auto;
+  background-color:  rgb(3, 64, 101);
+  color: white;
+  outline: none;
+  border: 1px white solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.startBtn:hover{
+  color: rgb(3, 64, 101); ;
+  background-color: white;;
+}
